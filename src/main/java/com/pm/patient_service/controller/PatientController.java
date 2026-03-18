@@ -59,4 +59,9 @@ public class PatientController {
         return ResponseEntity.noContent().build();
     }
 
+    @GetMapping("/hello")
+    public String getMessage() {
+        return "Hello We have just deployed the application in AWS ec2";
+    }
+
 }
